@@ -15,6 +15,7 @@ jobs:
           command: |
             apk add --update ansible #Install dependencies for the playbook
 
+      -run: ssh-keyscan 52.66.79.227 >> ~/.ssh/known_hosts
       - run:
           name: Setup the Server
           command: |

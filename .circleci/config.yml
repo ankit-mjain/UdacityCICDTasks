@@ -8,8 +8,8 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys:
-        fingerprints:
-          - "47:ef:5a:b5:a8:3f:ca:57:7e:39:ec:27:70:96:88:1b"
+          fingerprints:
+            - "47:ef:5a:b5:a8:3f:ca:57:7e:39:ec:27:70:96:88:1b"
       - run: ansible-playbook ~/Ansible_CD/main_remote.yml
 
 
